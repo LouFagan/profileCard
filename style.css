@@ -23,14 +23,38 @@ body {
 
 .container {
   display: flex;
-  width: 1440px;
   height: 720px;
   justify-content: center;
   align-items: center;
 }
-.card {
+.cardOuter {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
   width: 50rem;
-  height: 20rem;
+  height: 30rem;
   margin: 0 auto;
   background-color: var(--dkcyan);
+}
+
+.cardInner {
+  position: relative;
+  width: 345px;
+  height: 200px;
+  background-color: #ffffff;
+  /*  background-image: url(./images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top; */
+  border-radius: 20px;
+  z-index: 3;
+}
+.topImg {
+  position: absolute;
+  top: 210px;
+  left: 265px;
+  overflow: hidden;
+  z-index: 2;
 }
