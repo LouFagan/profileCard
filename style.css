@@ -1,0 +1,36 @@
+:root {
+  --dkcyan: hsl(185, 75%, 39%);
+  --dkblue: hsl(229, 23%, 23%);
+  --dkgrayBlue: hsl(227, 10%, 46%);
+  --dkgray: hsl(0, 0%, 59%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 1440px;
+  height: 720px;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 50rem;
+  height: 20rem;
+  margin: 0 auto;
+  background-color: var(--dkcyan);
+}
