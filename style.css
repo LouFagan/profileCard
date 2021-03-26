@@ -1,13 +1,15 @@
 :root {
-  --dkcyan: hsl(185, 75%, 39%);
-  --dkblue: hsl(229, 23%, 23%);
-  --dkgrayBlue: hsl(227, 10%, 46%);
-  --dkgray: hsl(0, 0%, 59%);
+  --dkCyan: hsl(185, 75%, 39%);
+  --dkBlue: hsl(229, 23%, 23%);
+  --dkGrayBlue: hsl(227, 10%, 46%);
+  --dkGray: hsl(0, 0%, 59%);
 }
 
 html {
   box-sizing: border-box;
   font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -16,11 +18,9 @@ html {
   box-sizing: inherit;
 }
 body {
-  min-height: 100vh;
-  margin: 0;
   font-size: 16px;
   font-family: "Kumbh Sans", sans-serif;
-  background-color: var(--dkcyan);
+  background-color: var(--dkCyan);
   background-image: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
@@ -42,6 +42,7 @@ img {
   align-items: center;
 }
 .cardOuter {
+  height: 373px;
   background-color: white;
   border-radius: 5%;
   overflow: hidden;
@@ -52,8 +53,8 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 2rem;
-  border-bottom: 0.5px solid var(--dkgray);
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid var(--dkGray);
 }
 
 .info__image {
@@ -63,29 +64,23 @@ img {
   align-items: center;
 }
 
-.topImg {
-  position: absolute;
-  border: 5px solid white;
-  border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
-  top: 4.1875rem;
-  left: 5.5625rem;
-  overflow: hidden;
-}
-
 .age,
-.town {
+.town,
+.stats__text {
   font-weight: 400;
+  color: var(--dkGray);
 }
-
 .name {
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-bottom: 0;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--dkBlue);
+}
+
+.stats__spot {
+  padding-top: 1rem;
 }
 .stats__number {
   color: var(--dkBlue);
@@ -95,15 +90,14 @@ img {
   text-transform: uppercase;
 }
 
-.border {
-  position: absolute;
-  top: 400px;
-  width: 250px;
-  border: 1px solid var(--dkgray);
+.stats__text {
+  font-size: 0.875rem;
+  margin: 10px 0;
 }
+
 footer,
 .footer {
-  margin-top: 2.2rem;
+  /* margin-top: 2.2rem; */
   display: flex;
   justify-content: space-evenly;
 }
