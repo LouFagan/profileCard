@@ -30,34 +30,36 @@
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
 
-    <section class="cardOuter">
-      <img class='imgTop' src="./images/bg-pattern-top.svg" alt="">
-      <img class='imgBtm' src="./images/bg-pattern-bottom.svg" alt="">
+    <div class="cardOuter">
+      <img src="./images/bg-pattern-card.svg" alt="">
 
-      <div class="cardInner">
-        <img src="./images/image-victor.jpg" alt="" class="topImg">
 
-        <div class="name">Victor Crest</div>
-        <div class="number">26</div>
-        <div class="town">London</div>
-      </div>
-      <div class="border"></div>
+      <section class="cardInner">
+        <img class="info__image" src="./images/image-victor.jpg" alt="Victor Crest Profile picture">
+
+        <h1 class="name">Victor Crest <span class="age">26</span></h1>
+        <p class="town">London</p>
+      </section>
 
       <footer class="footer">
 
-        <div class="bottomText">80K</div>
-        <div class="bottomText">803K</div>
-        <div class="bottomText">1.4K</div>
-
-        <div class="bottomText1"> Followers</div>
-        <div class="bottomText1">
-          Likes</div>
-        <div class="bottomText1"> Photos</div>
+        <div class="stats__spot">
+          <p class="stats__number no margin">80k</p>
+          <p class="stats__text">Followers</p>
+        </div>
+        <div class="stats__spot">
+          <p class="stats__number no margin">803K</p>
+          <p class="stats__text">Likes</p>
+        </div>
+        <div class="stats__spot">
+          <p class="stats__number no margin">1.4K</p>
+          <p class="stats__text">Photos</p>
+        </div>
       </footer>
-    </section>
-  </div>
+    </div>
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
